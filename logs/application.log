@@ -1,0 +1,549 @@
+2022-11-03 12:11:02,997 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-5 - Database [default] initialized
+2022-11-03 12:11:03,043 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
+2022-11-03 12:11:04,052 [WARN] from io.avaje.config.InitialLoader in play-dev-mode-akka.actor.default-dispatcher-5 - Loading properties from ebean.properties is deprecated. Please migrate to use application.yaml or application.properties instead.
+2022-11-03 12:11:07,013 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-5 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2022-11-03 12:11:07,180 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-5 - Application started (Dev) (no global state)
+2022-11-03 12:11:07,344 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-5 - 
+
+! @7pfjhhfmi - Internal server error, for (GET) [/] ->
+ 
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$5(ApplicationEvolutions.scala:519)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$5$adapted(ApplicationEvolutions.scala:517)
+	at play.api.db.evolutions.ApplicationEvolutions$.$anonfun$runEvolutions$1(ApplicationEvolutions.scala:210)
+	at play.api.db.evolutions.ApplicationEvolutions$.withLock(ApplicationEvolutions.scala:231)
+	at play.api.db.evolutions.ApplicationEvolutions$.runEvolutions(ApplicationEvolutions.scala:201)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$4(ApplicationEvolutions.scala:517)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$4$adapted(ApplicationEvolutions.scala:512)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:512)
+	at play.core.DefaultWebCommands.$anonfun$handleWebCommand$1(WebCommands.scala:42)
+	at scala.collection.immutable.Stream.flatMap(Stream.scala:200)
+	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:42)
+	at play.api.http.DefaultHttpRequestHandler.$anonfun$handlerForRequest$4(HttpRequestHandler.scala:223)
+	at scala.Option.flatMap(Option.scala:283)
+	at play.api.http.DefaultHttpRequestHandler.handlerForRequest(HttpRequestHandler.scala:222)
+	at play.core.server.Server$.getHandlerFor(Server.scala:129)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:323)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1307)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+2022-11-03 12:11:14,623 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-7 - 
+
+! @7pfjhi0h6 - Internal server error, for (GET) [/] ->
+ 
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$5(ApplicationEvolutions.scala:519)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$5$adapted(ApplicationEvolutions.scala:517)
+	at play.api.db.evolutions.ApplicationEvolutions$.$anonfun$runEvolutions$1(ApplicationEvolutions.scala:210)
+	at play.api.db.evolutions.ApplicationEvolutions$.withLock(ApplicationEvolutions.scala:231)
+	at play.api.db.evolutions.ApplicationEvolutions$.runEvolutions(ApplicationEvolutions.scala:201)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$4(ApplicationEvolutions.scala:517)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$4$adapted(ApplicationEvolutions.scala:512)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:512)
+	at play.core.DefaultWebCommands.$anonfun$handleWebCommand$1(WebCommands.scala:42)
+	at scala.collection.immutable.Stream.flatMap(Stream.scala:200)
+	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:42)
+	at play.api.http.DefaultHttpRequestHandler.$anonfun$handlerForRequest$4(HttpRequestHandler.scala:223)
+	at scala.Option.flatMap(Option.scala:283)
+	at play.api.http.DefaultHttpRequestHandler.handlerForRequest(HttpRequestHandler.scala:222)
+	at play.core.server.Server$.getHandlerFor(Server.scala:129)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:323)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1307)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+2022-11-03 12:11:16,514 [ERROR] from play.api.db.evolutions.DefaultEvolutionsApi in play-dev-mode-akka.actor.default-dispatcher-5 - Field 'created_at' doesn't have a default value [ERROR:1364, SQLSTATE:HY000]
+2022-11-03 12:11:16,515 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-5 - 
+
+! @7pfjhi3bp - Internal server error, for (GET) [/@evolutions/apply/default?redirect=http%3A%2F%2Flocalhost%3A8086%2F] ->
+ 
+play.api.db.evolutions.InconsistentDatabase: Database 'default' is in an inconsistent state![An evolution has not been applied properly. Please check the problem and resolve it manually before marking it as resolved.]
+	at play.api.db.evolutions.DatabaseEvolutions.$anonfun$checkEvolutionsState$3(EvolutionsApi.scala:306)
+	at play.api.db.evolutions.DatabaseEvolutions.$anonfun$checkEvolutionsState$3$adapted(EvolutionsApi.scala:291)
+	at play.api.db.evolutions.DatabaseEvolutions.executeQuery(EvolutionsApi.scala:338)
+	at play.api.db.evolutions.DatabaseEvolutions.checkEvolutionsState(EvolutionsApi.scala:291)
+	at play.api.db.evolutions.DatabaseEvolutions.evolve(EvolutionsApi.scala:259)
+	at play.api.db.evolutions.DefaultEvolutionsApi.evolve(EvolutionsApi.scala:103)
+	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:492)
+	at play.core.DefaultWebCommands.$anonfun$handleWebCommand$1(WebCommands.scala:42)
+	at scala.collection.immutable.Stream.flatMap(Stream.scala:200)
+	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:42)
+	at play.api.http.DefaultHttpRequestHandler.$anonfun$handlerForRequest$4(HttpRequestHandler.scala:223)
+	at scala.Option.flatMap(Option.scala:283)
+	at play.api.http.DefaultHttpRequestHandler.handlerForRequest(HttpRequestHandler.scala:222)
+	at play.core.server.Server$.getHandlerFor(Server.scala:129)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:323)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1307)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+2022-11-03 12:11:21,219 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-5 - Shutting down connection pool.
+2022-11-03 12:11:21,492 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] initialized
+2022-11-03 12:11:21,492 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2022-11-03 12:11:21,572 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2022-11-03 12:11:21,589 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2022-11-03 12:11:23,556 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-5 - Shutting down connection pool.
+2022-11-03 12:11:23,928 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-7 - Database [default] initialized
+2022-11-03 12:11:23,928 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-7 - Creating Pool for datasource 'default'
+2022-11-03 12:11:24,049 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-7 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2022-11-03 12:11:24,059 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-7 - Application started (Dev) (no global state)
+2022-11-03 12:11:24,227 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-11-03 12:11:24,228 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2022-11-03 12:15:44,791 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-5 - Shutting down connection pool.
+2022-11-03 12:15:45,516 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-17 - Database [default] initialized
+2022-11-03 12:15:45,517 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-17 - Creating Pool for datasource 'default'
+2022-11-03 12:15:45,988 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-17 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2022-11-03 12:15:46,006 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-17 - Application started (Dev) (no global state)
+2022-11-03 12:15:46,071 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-17 - 
+
+! @7pfji7c5e - Internal server error, for (GET) [/] ->
+ 
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$5(ApplicationEvolutions.scala:519)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$5$adapted(ApplicationEvolutions.scala:517)
+	at play.api.db.evolutions.ApplicationEvolutions$.$anonfun$runEvolutions$1(ApplicationEvolutions.scala:210)
+	at play.api.db.evolutions.ApplicationEvolutions$.withLock(ApplicationEvolutions.scala:231)
+	at play.api.db.evolutions.ApplicationEvolutions$.runEvolutions(ApplicationEvolutions.scala:201)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$4(ApplicationEvolutions.scala:517)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$4$adapted(ApplicationEvolutions.scala:512)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:512)
+	at play.core.DefaultWebCommands.$anonfun$handleWebCommand$1(WebCommands.scala:42)
+	at scala.collection.immutable.Stream.flatMap(Stream.scala:200)
+	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:42)
+	at play.api.http.DefaultHttpRequestHandler.$anonfun$handlerForRequest$4(HttpRequestHandler.scala:223)
+	at scala.Option.flatMap(Option.scala:283)
+	at play.api.http.DefaultHttpRequestHandler.handlerForRequest(HttpRequestHandler.scala:222)
+	at play.core.server.Server$.getHandlerFor(Server.scala:129)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:323)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1307)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+2022-11-03 12:15:50,308 [ERROR] from play.api.db.evolutions.DefaultEvolutionsApi in play-dev-mode-akka.actor.default-dispatcher-18 - Duplicate entry '3' for key 'PRIMARY' [ERROR:1062, SQLSTATE:23000]
+2022-11-03 12:15:50,325 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-18 - 
+
+! @7pfji7icg - Internal server error, for (GET) [/@evolutions/apply/default?redirect=http%3A%2F%2Flocalhost%3A8086%2F] ->
+ 
+play.api.db.evolutions.InconsistentDatabase: Database 'default' is in an inconsistent state![An evolution has not been applied properly. Please check the problem and resolve it manually before marking it as resolved.]
+	at play.api.db.evolutions.DatabaseEvolutions.$anonfun$checkEvolutionsState$3(EvolutionsApi.scala:306)
+	at play.api.db.evolutions.DatabaseEvolutions.$anonfun$checkEvolutionsState$3$adapted(EvolutionsApi.scala:291)
+	at play.api.db.evolutions.DatabaseEvolutions.executeQuery(EvolutionsApi.scala:338)
+	at play.api.db.evolutions.DatabaseEvolutions.checkEvolutionsState(EvolutionsApi.scala:291)
+	at play.api.db.evolutions.DatabaseEvolutions.evolve(EvolutionsApi.scala:259)
+	at play.api.db.evolutions.DefaultEvolutionsApi.evolve(EvolutionsApi.scala:103)
+	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:492)
+	at play.core.DefaultWebCommands.$anonfun$handleWebCommand$1(WebCommands.scala:42)
+	at scala.collection.immutable.Stream.flatMap(Stream.scala:200)
+	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:42)
+	at play.api.http.DefaultHttpRequestHandler.$anonfun$handlerForRequest$4(HttpRequestHandler.scala:223)
+	at scala.Option.flatMap(Option.scala:283)
+	at play.api.http.DefaultHttpRequestHandler.handlerForRequest(HttpRequestHandler.scala:222)
+	at play.core.server.Server$.getHandlerFor(Server.scala:129)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:323)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1307)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+2022-11-03 12:17:59,285 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-8 - Shutting down connection pool.
+2022-11-03 12:17:59,607 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-21 - Database [default] initialized
+2022-11-03 12:17:59,607 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-21 - Creating Pool for datasource 'default'
+2022-11-03 12:17:59,885 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-21 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2022-11-03 12:17:59,891 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-21 - Application started (Dev) (no global state)
+2022-11-03 12:17:59,906 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-21 - 
+
+! @7pfjif250 - Internal server error, for (GET) [/] ->
+ 
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$5(ApplicationEvolutions.scala:519)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$5$adapted(ApplicationEvolutions.scala:517)
+	at play.api.db.evolutions.ApplicationEvolutions$.$anonfun$runEvolutions$1(ApplicationEvolutions.scala:210)
+	at play.api.db.evolutions.ApplicationEvolutions$.withLock(ApplicationEvolutions.scala:231)
+	at play.api.db.evolutions.ApplicationEvolutions$.runEvolutions(ApplicationEvolutions.scala:201)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$4(ApplicationEvolutions.scala:517)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$4$adapted(ApplicationEvolutions.scala:512)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:512)
+	at play.core.DefaultWebCommands.$anonfun$handleWebCommand$1(WebCommands.scala:42)
+	at scala.collection.immutable.Stream.flatMap(Stream.scala:200)
+	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:42)
+	at play.api.http.DefaultHttpRequestHandler.$anonfun$handlerForRequest$4(HttpRequestHandler.scala:223)
+	at scala.Option.flatMap(Option.scala:283)
+	at play.api.http.DefaultHttpRequestHandler.handlerForRequest(HttpRequestHandler.scala:222)
+	at play.core.server.Server$.getHandlerFor(Server.scala:129)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:323)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1307)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+2022-11-03 12:18:03,468 [ERROR] from play.api.db.evolutions.DefaultEvolutionsApi in play-dev-mode-akka.actor.default-dispatcher-31 - Table 'software_products.computer' doesn't exist [ERROR:1146, SQLSTATE:42S02]
+2022-11-03 12:18:03,496 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-31 - 
+
+! @7pfjif7c2 - Internal server error, for (GET) [/@evolutions/apply/default?redirect=http%3A%2F%2Flocalhost%3A8086%2F] ->
+ 
+play.api.db.evolutions.InconsistentDatabase: Database 'default' is in an inconsistent state![An evolution has not been applied properly. Please check the problem and resolve it manually before marking it as resolved.]
+	at play.api.db.evolutions.DatabaseEvolutions.$anonfun$checkEvolutionsState$3(EvolutionsApi.scala:306)
+	at play.api.db.evolutions.DatabaseEvolutions.$anonfun$checkEvolutionsState$3$adapted(EvolutionsApi.scala:291)
+	at play.api.db.evolutions.DatabaseEvolutions.executeQuery(EvolutionsApi.scala:338)
+	at play.api.db.evolutions.DatabaseEvolutions.checkEvolutionsState(EvolutionsApi.scala:291)
+	at play.api.db.evolutions.DatabaseEvolutions.evolve(EvolutionsApi.scala:259)
+	at play.api.db.evolutions.DefaultEvolutionsApi.evolve(EvolutionsApi.scala:103)
+	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:492)
+	at play.core.DefaultWebCommands.$anonfun$handleWebCommand$1(WebCommands.scala:42)
+	at scala.collection.immutable.Stream.flatMap(Stream.scala:200)
+	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:42)
+	at play.api.http.DefaultHttpRequestHandler.$anonfun$handlerForRequest$4(HttpRequestHandler.scala:223)
+	at scala.Option.flatMap(Option.scala:283)
+	at play.api.http.DefaultHttpRequestHandler.handlerForRequest(HttpRequestHandler.scala:222)
+	at play.core.server.Server$.getHandlerFor(Server.scala:129)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:323)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1307)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+2022-11-03 12:18:27,589 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-3 - Shutting down connection pool.
+2022-11-03 12:18:27,935 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-21 - Database [default] initialized
+2022-11-03 12:18:27,935 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-21 - Creating Pool for datasource 'default'
+2022-11-03 12:18:28,013 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-21 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2022-11-03 12:18:28,019 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-21 - Application started (Dev) (no global state)
+2022-11-03 12:18:29,866 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-3 - Shutting down connection pool.
+2022-11-03 12:18:30,118 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-21 - Database [default] initialized
+2022-11-03 12:18:30,119 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-21 - Creating Pool for datasource 'default'
+2022-11-03 12:18:30,288 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-21 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2022-11-03 12:18:30,295 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-21 - Application started (Dev) (no global state)
+2022-11-03 12:18:30,348 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-11-03 12:18:30,348 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2022-11-03 12:19:20,329 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-4 - Shutting down connection pool.
+2022-11-03 12:19:20,493 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-29 - Database [default] initialized
+2022-11-03 12:19:20,493 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-29 - Creating Pool for datasource 'default'
+2022-11-03 12:19:20,564 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-29 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2022-11-03 12:19:20,568 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-29 - Application started (Dev) (no global state)
+2022-11-03 12:19:20,577 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-29 - 
+
+! @7pfjijhdj - Internal server error, for (GET) [/] ->
+ 
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$5(ApplicationEvolutions.scala:519)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$5$adapted(ApplicationEvolutions.scala:517)
+	at play.api.db.evolutions.ApplicationEvolutions$.$anonfun$runEvolutions$1(ApplicationEvolutions.scala:210)
+	at play.api.db.evolutions.ApplicationEvolutions$.withLock(ApplicationEvolutions.scala:231)
+	at play.api.db.evolutions.ApplicationEvolutions$.runEvolutions(ApplicationEvolutions.scala:201)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$4(ApplicationEvolutions.scala:517)
+	at play.api.db.evolutions.EvolutionsWebCommands.$anonfun$handleWebCommand$4$adapted(ApplicationEvolutions.scala:512)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at play.api.db.evolutions.EvolutionsWebCommands.handleWebCommand(ApplicationEvolutions.scala:512)
+	at play.core.DefaultWebCommands.$anonfun$handleWebCommand$1(WebCommands.scala:42)
+	at scala.collection.immutable.Stream.flatMap(Stream.scala:200)
+	at play.core.DefaultWebCommands.handleWebCommand(WebCommands.scala:42)
+	at play.api.http.DefaultHttpRequestHandler.$anonfun$handlerForRequest$4(HttpRequestHandler.scala:223)
+	at scala.Option.flatMap(Option.scala:283)
+	at play.api.http.DefaultHttpRequestHandler.handlerForRequest(HttpRequestHandler.scala:222)
+	at play.core.server.Server$.getHandlerFor(Server.scala:129)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:323)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1307)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
+	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
+	at akka.actor.Actor.aroundReceive(Actor.scala:537)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:580)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:548)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+2022-11-03 12:19:27,433 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-4 - Shutting down connection pool.
+2022-11-03 12:19:27,644 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-28 - Database [default] initialized
+2022-11-03 12:19:27,645 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-28 - Creating Pool for datasource 'default'
+2022-11-03 12:19:27,768 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-28 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    play.filters.cors.CORSFilter
+
+2022-11-03 12:19:27,779 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-28 - Application started (Dev) (no global state)
+2022-11-03 12:19:27,807 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2022-11-03 12:19:27,807 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2022-11-03 12:19:38,378 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-6 - txn[1001] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 20; --bind(%%)
+2022-11-03 12:19:38,386 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-6 - txn[1001] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[24448] rows[15] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:19:38,395 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-6 - txn[1002] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:19:38,395 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-6 - txn[1002] FindCount exeMicros[2447] rows[15] type[models.entities.Software] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:19:38,587 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-6 - txn[1003] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,2,3,4,1})
+2022-11-03 12:19:38,587 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-6 - txn[1003] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[8465] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,2,3,4,1}]
+2022-11-03 12:22:11,512 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1004] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 20; --bind(%%)
+2022-11-03 12:22:11,577 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1004] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[98759] rows[15] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:22:11,589 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1005] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:22:11,591 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1005] FindCount exeMicros[2942] rows[15] type[models.entities.Software] predicates[] bind[%%]
+2022-11-03 12:22:11,741 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-7 - txn[1006] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,2,3,4,1})
+2022-11-03 12:22:11,742 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-7 - txn[1006] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[34223] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,2,3,4,1}]
+2022-11-03 12:22:41,497 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1007] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 10; --bind(%%)
+2022-11-03 12:22:41,505 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1007] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[25558] rows[10] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:22:41,514 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1008] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:22:41,514 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1008] FindCount exeMicros[4359] rows[15] type[models.entities.Software] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:22:41,533 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1009] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,2,3,4,1})
+2022-11-03 12:22:41,533 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1009] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[7445] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,2,3,4,1}]
+2022-11-03 12:22:46,065 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1010] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 10 offset 10; --bind(%%)
+2022-11-03 12:22:46,067 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1010] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[10927] rows[5] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:22:46,087 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1011] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:22:46,087 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1011] FindCount exeMicros[891] rows[15] type[models.entities.Software] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:22:46,093 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1012] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id = ?  ; --bind(1, )
+2022-11-03 12:22:46,093 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1012] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:1] exeMicros[3618] rows[1] predicates[] bind[1, ]
+2022-11-03 12:22:47,871 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1013] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 10; --bind(%%)
+2022-11-03 12:22:47,873 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1013] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[7182] rows[10] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:22:47,874 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1014] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:22:47,874 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1014] FindCount exeMicros[770] rows[15] type[models.entities.Software] predicates[] bind[%%]
+2022-11-03 12:22:47,877 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1015] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,2,3,4,1})
+2022-11-03 12:22:47,877 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1015] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[1485] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,2,3,4,1}]
+2022-11-03 12:22:50,588 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1016] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 10; --bind(%a%)
+2022-11-03 12:22:50,590 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1016] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[5891] rows[10] predicates[lower(t0.name) like ? escape'' ] bind[%a%]
+2022-11-03 12:22:50,591 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1017] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%a%)
+2022-11-03 12:22:50,591 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1017] FindCount exeMicros[564] rows[12] type[models.entities.Software] predicates[] bind[%a%]
+2022-11-03 12:22:50,594 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1018] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,2,3,1,1})
+2022-11-03 12:22:50,594 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1018] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:3] exeMicros[1476] rows[3] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,2,3,1,1}]
+2022-11-03 12:22:53,629 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1019] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 10; --bind(%macbook%)
+2022-11-03 12:22:53,643 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1019] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[15474] rows[2] predicates[lower(t0.name) like ? escape'' ] bind[%macbook%]
+2022-11-03 12:22:53,644 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1020] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%macbook%)
+2022-11-03 12:22:53,644 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1020] FindCount exeMicros[712] rows[2] type[models.entities.Software] predicates[] bind[%macbook%]
+2022-11-03 12:22:53,646 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1021] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id = ?  ; --bind(1, )
+2022-11-03 12:22:53,646 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1021] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:1] exeMicros[1044] rows[1] predicates[] bind[1, ]
+2022-11-03 12:22:56,593 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1022] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 10; --bind(%%)
+2022-11-03 12:22:56,600 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1022] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[10478] rows[10] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:22:56,601 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1023] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:22:56,601 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1023] FindCount exeMicros[770] rows[15] type[models.entities.Software] predicates[] bind[%%]
+2022-11-03 12:22:56,604 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1024] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,2,3,4,1})
+2022-11-03 12:22:56,604 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1024] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[1523] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,2,3,4,1}]
+2022-11-03 12:23:03,614 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1025] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 10; --bind(%%)
+2022-11-03 12:23:03,616 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1025] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[6386] rows[10] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:23:03,618 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1026] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:23:03,618 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1026] FindCount exeMicros[732] rows[15] type[models.entities.Software] predicates[] bind[%%]
+2022-11-03 12:23:03,620 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-8 - txn[1027] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,2,3,4,1})
+2022-11-03 12:23:03,621 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-8 - txn[1027] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[2196] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,2,3,4,1}]
+2022-11-03 12:26:25,606 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-9 - txn[1028] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 10; --bind(%%)
+2022-11-03 12:26:25,616 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-9 - txn[1028] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[34905] rows[10] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:26:25,630 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-9 - txn[1029] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:26:25,630 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-9 - txn[1029] FindCount exeMicros[976] rows[15] type[models.entities.Software] predicates[] bind[%%]
+2022-11-03 12:26:25,678 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-9 - txn[1030] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,2,3,4,1})
+2022-11-03 12:26:25,682 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-9 - txn[1030] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[23476] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,2,3,4,1}]
+2022-11-03 12:27:11,000 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-10 - txn[1031] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 10; --bind(%%)
+2022-11-03 12:27:11,004 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-10 - txn[1031] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[12298] rows[10] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:27:11,007 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-10 - txn[1032] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:27:11,007 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-10 - txn[1032] FindCount exeMicros[814] rows[15] type[models.entities.Software] predicates[] bind[%%]
+2022-11-03 12:27:11,015 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-10 - txn[1033] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,2,3,4,1})
+2022-11-03 12:27:11,015 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-10 - txn[1033] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[2416] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,2,3,4,1}]
+2022-11-03 12:27:14,395 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-10 - txn[1034] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where t0.id = ?  ; --bind(12, )
+2022-11-03 12:27:14,399 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-10 - txn[1034] FindBean type[Software] origin[DNpY8Q.A.A] exeMicros[6425] rows[1] bind[12, ]
+2022-11-03 12:27:14,427 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-10 - txn[1035] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id = ?  ; --bind(1, )
+2022-11-03 12:27:14,430 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-10 - txn[1035] FindMany mode[+lazy] type[Company] origin[DNpY8Q.A.A] lazyLoadProp[createdAt] load[path:company batch:1] exeMicros[4065] rows[1] predicates[] bind[1, ]
+2022-11-03 12:27:14,787 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-10 - txn[1036] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 order by t0.name; --bind()
+2022-11-03 12:27:14,788 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-10 - txn[1036] FindMany type[Company] origin[CV6xRF.A.A] exeMicros[12524] rows[15] predicates[] bind[]
+2022-11-03 12:27:23,309 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-10 - txn[1037] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name limit 10; --bind(%%)
+2022-11-03 12:27:23,311 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-10 - txn[1037] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[8930] rows[10] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:27:23,318 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-10 - txn[1038] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:27:23,318 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-10 - txn[1038] FindCount exeMicros[7027] rows[15] type[models.entities.Software] predicates[] bind[%%]
+2022-11-03 12:27:23,321 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-10 - txn[1039] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,2,3,4,1})
+2022-11-03 12:27:23,321 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-10 - txn[1039] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[1082] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,2,3,4,1}]
+2022-11-03 12:31:08,864 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-11 - txn[1040] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name desc limit 10; --bind(%%)
+2022-11-03 12:31:08,871 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-11 - txn[1040] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[154794] rows[10] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:31:08,878 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-11 - txn[1041] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:31:08,878 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-11 - txn[1041] FindCount exeMicros[2236] rows[15] type[models.entities.Software] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:31:08,903 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-11 - txn[1042] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,4,3,2,1})
+2022-11-03 12:31:08,904 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-11 - txn[1042] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[16456] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,4,3,2,1}]
+2022-11-03 12:31:55,591 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-12 - txn[1043] select t0.id, t0.name, t0.introduced, t0.discontinued, t0.created_at, t0.updated_at, t0.company_id from software t0 where lower(t0.name) like ? escape''  order by t0.name desc limit 10; --bind(%%)
+2022-11-03 12:31:55,599 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-12 - txn[1043] FindMany type[Software] origin[DNpY8R.A.A] exeMicros[25572] rows[10] predicates[lower(t0.name) like ? escape'' ] bind[%%]
+2022-11-03 12:31:55,614 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-12 - txn[1044] select count(*) from software t0 where lower(t0.name) like ? escape'' ; --bind(%%)
+2022-11-03 12:31:55,614 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-12 - txn[1044] FindCount exeMicros[4782] rows[15] type[models.entities.Software] predicates[] bind[%%]
+2022-11-03 12:31:55,631 [DEBUG] from io.ebean.SQL in application-akka.actor.default-dispatcher-12 - txn[1045] select t0.id, t0.name, t0.created_at, t0.updated_at from company t0 where t0.id in (?,?,?,?,?); --bind(Array[5]={1,4,3,2,1})
+2022-11-03 12:31:55,632 [DEBUG] from io.ebean.SUM in application-akka.actor.default-dispatcher-12 - txn[1045] FindMany mode[+lazy] type[Company] origin[DNpY8R.A.A] lazyLoadProp[createdAt] load[path:company batch:4] exeMicros[6542] rows[4] predicates[t0.id in (?,?,?,?,?)] bind[Array[5]={1,4,3,2,1}]
+2022-11-03 13:01:39,496 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-8-thread-4 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
+2022-11-03 13:01:39,499 [INFO] from play.core.server.AkkaHttpServer in pool-8-thread-4 - Stopping Akka HTTP server...
+2022-11-03 13:01:39,517 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-66 - Terminating server binding for /0:0:0:0:0:0:0:0:8086
+2022-11-03 13:01:45,343 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-13 - Shutting down connection pool.
+2022-11-03 13:01:45,393 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-66 - Running provided shutdown stop hooks

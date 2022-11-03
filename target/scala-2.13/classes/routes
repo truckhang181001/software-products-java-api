@@ -1,0 +1,17 @@
+# Default
+GET           /                                     controllers.HomeController.index()
+
+# Software RESTful API
+GET           /api/client/software/detail           controllers.SoftwareController.getDetailSoftware(request: Request, id:Long)
+GET           /api/client/software/list             controllers.SoftwareController.getListSoftware(request: Request, page:Int, pageSize: Int, sortBy:String, orderBy:String, filter:String)
+GET           /api/client/software/all              controllers.SoftwareController.getAllSoftware(request: Request)
+POST          /api/client/software/create           controllers.SoftwareController.createSoftware(request: Request)
+PUT           /api/client/software/update           controllers.SoftwareController.updateSoftware(request: Request)
+DELETE        /api/client/software/delete           controllers.SoftwareController.deleteSoftware(request: Request)
+
+# Company RESTful API
+GET           /api/client/company/all-option        controllers.CompanyController.getAllCompanyOption(request: Request)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET           /assets/*file                         controllers.Assets.at(path="/public", file)
